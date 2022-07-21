@@ -505,9 +505,6 @@ Succeed even if branch already exist
   (or (transient-args 'magit-gerrit-popup)
       (list "")))
 
-(transient-append-suffix 'magit-dispatch "%"
-  (list magit-gerrit-popup-prefix "Gerrit" 'magit-gerrit-popup))
-
 (transient-define-prefix magit-gerrit-copy-review-popup
   "Popup console for copy review to clipboard."
   ["Copy review"
